@@ -1,0 +1,15 @@
+INSTUPPages.login_page
+C:\Users\sandesh.bhutada\Eclipse_Workspace\PythonAutomation\Pages\login_page.py
+INFOS:&&1|1|2|0|3|1|7&&2|4|2|1|3|3|9&&3|5|2|6|3|4|9&&3|7|2|6|3|5|9&&3|8|2|6|3|6|9&&3|9|2|6|3|7|9&&2|10|2|1|3|10|9&&2|11|2|1|3|13|9&&2|12|2|1|3|16|9
+enter_password=11
+clkbtn=12
+LoginPage=1
+LoginPage.__init__=6
+Pages.login_page=2
+C:\Users\sandesh.bhutada\Eclipse_Workspace\PythonAutomation\Pages\login_page.py=3
+driver=5
+enter_username=10
+Username=7
+Button=9
+__init__=4
+Password=8

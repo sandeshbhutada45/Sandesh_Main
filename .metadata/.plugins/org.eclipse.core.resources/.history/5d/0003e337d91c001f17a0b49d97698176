@@ -1,0 +1,29 @@
+package Practices;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import java.util.Map;
+
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class Cookies {
+
+	@Test
+	public void cookies() {
+	
+		 Response res = given()
+		
+		.when().get("https://www.google.com/");
+		
+		String cok= res.getCookie("AEC"); //// for Single cookkies
+		 System.out.println("Cookies is: "+cok);
+		 
+		 
+		 Map<String, String> all_cookies= res.getCookies();   ///All Cokkies 
+		 System.out.println("All Cookies is: "+all_cookies.keySet());//only print keys
+		 System.out.println("All Cookies is: "+all_cookies.values());//only print Values
+		 System.out.println("All Cookies is: "+all_cookies);//Print Both
+	}
+}

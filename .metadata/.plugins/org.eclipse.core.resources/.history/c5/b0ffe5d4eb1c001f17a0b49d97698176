@@ -1,0 +1,16 @@
+package api.endpoint;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+
+public class UserEndPoint {
+
+	createUser(){
+		given()
+		
+		
+		.when().post(Routes_URL.post_url);
+	}
+	
+}

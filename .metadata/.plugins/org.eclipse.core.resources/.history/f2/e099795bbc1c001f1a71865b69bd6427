@@ -1,0 +1,35 @@
+package Practices;
+
+public class Pojo_Post {
+
+	String name;
+	String place;
+	String phone;
+	String courses[];
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPlace() {
+		return place;
+	}
+	public void setPlace(String place) {
+		this.place = place;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String[] getCources() {
+		return courses;
+	}
+	public void setCources(String[] courses) {
+		this.courses = courses;
+	}
+	
+
+}

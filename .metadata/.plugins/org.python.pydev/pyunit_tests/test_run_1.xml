@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+    <summary errors="1" failures="0" finished="true" name="Test Run: 1" tests="2" total_time="Finished in: 11.18 secs."/>
+    <test location="C:\Users\sandesh.bhutada\Eclipse_Workspace\PythonAutomation\Test\test_login.py" status="ok" test="TestClass.test_gettitle" time="0.01">
+        <stdout><![CDATA[
+]]></stdout>
+        <stderr/>
+    </test>
+    <test location="C:\Users\sandesh.bhutada\Eclipse_Workspace\PythonAutomation\Test\test_login.py" status="error" test="TestClass.test_step1" time="">
+        <stdout/>
+        <stderr><![CDATA[Traceback (most recent call last):
+  File "C:\Users\sandesh.bhutada\Eclipse_Workspace\PythonAutomation\Test\test_login.py", line 16, in test_step1
+    login.enter_username('Admin')
+  File "C:\Users\sandesh.bhutada\Eclipse_Workspace\PythonAutomation\Pages\login_page.py", line 11, in enter_username
+    self.driver.find_element_by_xpath(self.Username).send_keys(User)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WebDriver' object has no attribute 'find_element_by_xpath'
+]]></stderr>
+    </test>
+    <launch mode="run">
+        <launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="PythonAutomation test_login.py (1)"/>
+]]></launch_memento>
+    </launch>
+</pydev-testsuite>

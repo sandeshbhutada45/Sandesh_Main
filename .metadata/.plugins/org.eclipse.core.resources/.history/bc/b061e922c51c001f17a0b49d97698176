@@ -1,0 +1,11 @@
+package Practices;
+
+import org.testng.annotations.Test;
+
+public class Cookies {
+
+	@Test
+	public void cookies() {
+		
+	}
+}

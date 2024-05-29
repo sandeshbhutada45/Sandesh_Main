@@ -1,0 +1,10 @@
+package Practices;
+
+public class Pojo_Post {
+
+	String name;
+	String place;
+	int id;
+	String cources[];
+
+}

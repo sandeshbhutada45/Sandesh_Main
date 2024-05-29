@@ -1,0 +1,25 @@
+package Practices;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
+//given(): content type add authentication, add parameters and set headers...... 
+//when (): GET PUT POST DELETE methods
+//then(): all validation parts we have to cover in then, validate status code, extract response, cookies and response bodies.
+
+public class HTTPSMethod {
+
+	@Test
+	public void Get() {
+		given().when().get("https://reqres.in/api/users/2").then().statusCode(200).log().all();
+
+	}
+
+	@Test
+	public void Post() {
+		given().when().post("https://reqres.in/api/users").then().statusCode(200).log().all();
+
+	}
+}

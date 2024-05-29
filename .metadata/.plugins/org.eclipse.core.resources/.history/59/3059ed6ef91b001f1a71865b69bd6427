@@ -1,0 +1,14 @@
+package Main;
+
+import org.testng.annotations.Test;
+
+import Reusable.Utils;
+
+public class Demo extends Utils{
+
+	
+	@Test
+	public void step1() {
+		openBrowser("Chromee");
+	}
+}

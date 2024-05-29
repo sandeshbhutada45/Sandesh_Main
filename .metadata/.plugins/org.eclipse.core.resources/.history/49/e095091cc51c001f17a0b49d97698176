@@ -1,0 +1,9 @@
+package Practices;
+
+public class Cookies {
+
+	@Test
+	public void cookies() {
+		
+	}
+}
