@@ -60,36 +60,25 @@ public class Utils {
 
 /////////// OPEN CHROME BROWSER/////////////////
 	public void openBrowser(String browserName) {
-		switch (browserName)
-		{
-		    case "Chrome":
-		        driver = new ChromeDriver();
-		        driver.manage().window().maximize();
-		        break;
+		switch (browserName) {
+		case "Chrome":
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			break;
 
-		    case "Firefox":
-		        driver = new FirefoxDriver();
-		        driver.manage().window().maximize();
-		        break;
+		case "Firefox":
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			break;
 
-		    case "Edge":
-		        driver = new EdgeDriver();
-		        driver.manage().window().maximize();
-		        break;
-		    default:
-                System.out.println("Invalid Browser Name: " + browserName);
-                return;
+		case "Edge":
+			driver = new EdgeDriver();
+			driver.manage().window().maximize();
+			break;
+		default:
+			System.out.println("Invalid Browser Name: " + browserName);
+			return;
 		}
-	}
-
-/////////// OPEN URL/////////////////
-	public void navigateUrl(String url) {
-		driver.get(url);
-	}
-
-/////////// Locator Actions/////////////////
-	public void locator(By locator) {
-
 	}
 
 /////////// LOAD PROPERTIES FILE AND FETCH CREDENTIAL FROM PROPERTIES FILE//////////////
@@ -102,6 +91,16 @@ public class Utils {
 			System.out.println("Something went wrong in getPropertiesFiles Method");
 		}
 		return LP.getProperty(key);
+	}
+
+/////////// OPEN URL/////////////////
+	public void navigateUrl() {
+		driver.get(LP.getProperty("URL"));
+	}
+
+/////////// Locator Actions/////////////////
+	public void locator(By locator) {
+
 	}
 
 //////////////////// READ FROM EXCEL///////////////////////

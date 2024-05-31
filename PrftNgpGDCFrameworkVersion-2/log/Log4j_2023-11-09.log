@@ -1,0 +1,16 @@
+[INFO ] 2023-11-09 13:42:37,535 SampleSignInWeb.setUpBrowser() - Running setupBrowser for Test Class: com.perficient.testCases.SampleSignInWeb
+[INFO ] 2023-11-09 13:42:37,540 SampleSignInWeb.initParams() - onGrid=false
+[INFO ] 2023-11-09 13:42:37,541 SampleSignInWeb.initParams() - environment=QA
+[INFO ] 2023-11-09 13:42:37,541 SampleSignInWeb.initParams() - browserFlag=edgeHeadless
+[INFO ] 2023-11-09 13:42:37,541 SampleSignInWeb.initParams() - elasticLocation=http://10.128.190.5:9200/ngpautomation/_doc/
+[INFO ] 2023-11-09 13:42:37,541 SampleSignInWeb.initParams() - projectCode=testing
+[DEBUG] 2023-11-09 13:42:40,082 SampleSignInWeb.setDefaultTestData() - Setting TestData file = testdata_SampleSignInWeb.properties
+[INFO ] 2023-11-09 13:42:45,647 PageManager.snapshot() - save snapshot path is:./test-output/errorImages/20234209_014245.png
+[INFO ] 2023-11-09 13:42:45,676 SampleSignInWeb.afterMethod() - openURL : Pass
+[INFO ] 2023-11-09 13:42:50,810 PageManager.snapshot() - save snapshot path is:./test-output/errorImages/20234209_014250.png
+[INFO ] 2023-11-09 13:42:50,830 SampleSignInWeb.afterMethod() - signInButton : Pass
+[INFO ] 2023-11-09 13:42:58,072 CustomAssertion.snapshot() - save snapshot path is:.\test-output\errorImages\20234209_014258.png
+[INFO ] 2023-11-09 13:42:58,082 CustomAssertion.snapshot() - screen shot finished, it's in .\test-output\errorImages folder
+[INFO ] 2023-11-09 13:42:58,083 CustomAssertion.printError() - .\errorImages\20234209_014258.png
+[INFO ] 2023-11-09 13:42:58,087 SampleSignInWeb.afterMethod() - signIn : Fail
+[INFO ] 2023-11-09 13:42:58,089 SampleSignInWeb.tearDown() - 2023.11.09_13.42 PrftNgpGDCFrameworkVersion-2 testCases SampleSignInWeb edgeHeadless FAIL
