@@ -1,0 +1,10 @@
+package Main;
+
+import Reusable.Utils;
+
+public class implicitWait extends Utils {
+    
+	public static void main(String[] args) throws Exception {
+        
+    }
+}

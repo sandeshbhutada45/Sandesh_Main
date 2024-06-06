@@ -43,7 +43,7 @@ public class PrismMain extends Utils{
 		openBrowser("Chrome");
 		driver.get(getPropertiesFiles("URL8"));
 		actionPerfom1();
-		getDropdownValues(dd,1);
+		getDropdownByIndex(dd,1);
 		actionPerfom2();
 		actionPerfom3();
 		getResponseCode();

@@ -1,0 +1,23 @@
+package Practices;
+
+import org.testng.annotations.Test;
+
+public class testgetUserWithAuthentication {
+
+	@Test
+	public void testGetUserWithAuthentication() {
+	    String token = "YOUR_ACCESS_TOKEN";
+
+	    Response response = RestAssured.given()
+	        .auth()
+	        .oauth2(token)
+	        .get("https://gorest.co.in/public/v2/users/123");
+
+	    Assert.assertEquals(response.getStatusCode(), 200);
+
+	    User user = response.as(User.class);
+	    Assert.assertNotNull(user);
+	    Assert.assertEquals(user.getId(), 123);
+	}
+
+}

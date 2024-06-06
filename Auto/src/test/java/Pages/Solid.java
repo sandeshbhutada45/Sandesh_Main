@@ -69,9 +69,9 @@ public class Solid extends Utils {
 
 			// Question 1
 			if (indications.equals("Approved Indication")) {
-				getDropdownValues(drpdwn, 1);
+				getDropdownByIndex(drpdwn, 1);
 			} else {
-				getDropdownValues(drpdwn, 6);
+				getDropdownByIndex(drpdwn, 6);
 			}
 
 			// Question 2

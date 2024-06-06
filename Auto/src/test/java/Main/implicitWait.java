@@ -1,22 +1,16 @@
 package Main;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-
 import Reusable.Utils;
 
+import java.io.IOException;
+
+import org.testng.annotations.Test;
 public class implicitWait extends Utils {
     
-	public static void main(String[] args) throws Exception {
-        Utils uts = new Utils();
-
-       
-        uts.openBrowser("Chrome");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.get(uts.getPropertiesFiles("URL10"));
-        
-        driver.findElement(By.xpath("//*[@class='level0 has-children']")).click();
-        driver.close();
-    }
+	@Test
+	public void step1() throws IOException, Exception {
+		openBrowser("Chrome");
+		navigateUrl("https://www.saucedemo.com/");
+		getBrokenURL();
+	}
 }
