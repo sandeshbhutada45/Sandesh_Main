@@ -1,26 +1,35 @@
 package Assignment;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
-import io.netty.util.internal.SystemPropertyUtil;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Demo1 {
 
-	public static void main(String[] args) {
-		String currentDir = System.getProperty("user.dir");
-        System.out.println("Current working directory: " + currentDir);
-        String timestamp = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss").format(new Date());
-      
-        
-        
-//        07/20/2023 10:19:27
-        System.out.println(timestamp);
-			
-		
-		
+	@Test
+	public void step1() {
+		ChromeOptions op = new ChromeOptions();
+		op.addArguments("headless");
+		ChromeDriver driver = new ChromeDriver(op);
+		driver.navigate().to("https://www.google.com");
+		System.out.println("Title is: "+driver.getTitle());
+	}
 
-		
+	@Test
+	public void step2() {
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.navigate().to("https://www.google.com");
+		WebElement searchbox = driver.findElement(By.name("q"));
+		Dimension size = searchbox.getSize();
+		System.out.println("Height is: " + size.height);
+		System.out.println("Width is: " + size.width);
+
 	}
 
 }

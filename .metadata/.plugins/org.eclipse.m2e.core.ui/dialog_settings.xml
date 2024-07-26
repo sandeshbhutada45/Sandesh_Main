@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\sandesh.bhutada\Eclipse_Workspace\Auto\src\test\java\Reusable\Utils.java"/>
 			<item value="C:\Users\sandesh.bhutada\Eclipse_Workspace"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -56,6 +57,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="Demo"/>
+			<item value="cdgdgf"/>
 			<item value="RestAssured"/>
 			<item value="Auto"/>
 		</list>
@@ -63,6 +66,8 @@
 			<item value="Auto"/>
 		</list>
 		<list key="artifactId">
+			<item value="Demo"/>
+			<item value="fbdb"/>
 			<item value="RestAssured"/>
 			<item value="Auto"/>
 		</list>

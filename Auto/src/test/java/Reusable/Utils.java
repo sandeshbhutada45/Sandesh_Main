@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -15,6 +14,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -116,6 +116,12 @@ public class Utils {
 /////////// Sleep/////////////////
 	public void sleep(long second) throws InterruptedException {
 		Thread.sleep(second);
+	}
+
+/////////////IMPLICIT WAIT////////////////////////
+	public void implicitWait() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
 	}
 
 /////////////////WAIT UNIIL ELEMENT CLICKABLE///////////////////
