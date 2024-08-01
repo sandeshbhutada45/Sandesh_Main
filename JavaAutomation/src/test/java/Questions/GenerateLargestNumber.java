@@ -1,6 +1,5 @@
-package InterviewQuestions;
+package Questions;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class GenerateLargestNumber {
@@ -17,6 +16,7 @@ public class GenerateLargestNumber {
 			}
 
 		}
+		System.out.println(Arrays.toString(arr));
 		for (int num : arr) {
 			System.out.print(num);
 		}

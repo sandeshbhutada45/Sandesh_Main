@@ -1,4 +1,4 @@
-package InterviewQuestions;
+package Questions;
 
 public class ReverseStringWords {
 

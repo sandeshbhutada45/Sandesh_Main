@@ -1,6 +1,4 @@
-package InterviewQuestions;
-
-import java.util.Arrays;
+package Questions;
 
 public class SortString {
 

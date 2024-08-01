@@ -1,4 +1,4 @@
-package InterviewQuestions;
+package Questions;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ public class MergeTwoArrayAndSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int a[] = { 4, 8, 6, 7, 9 };
-		int b[] = { 5, 3, 1, 2, 10 };
+		int b[] = { 5, 3, 1, 2, 10,12};
 
 		int c[] = new int[a.length + b.length]; // 10
 
