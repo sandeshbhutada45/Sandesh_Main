@@ -3,16 +3,19 @@ package InterviewQuestions;
 public class FindSumOfArrayToTarget {
 
 	public static void main(String[] args) {
-		int arr[] = { 14, 5, 8, 6, 9, 2, 11, 12 };
-		int target = 20;
+		String[] array = {"5", "2", "9", "a", "1", "6", "#", "3"};
+        int sum = 0;
 
-		for (int i = 0; i < arr.length ; i++) {
-			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[i] + arr[j] == target) {
-					System.out.println(arr[i] + "," + arr[j]);
-				}
-			}
-		}
+        for (int i = 0; i < array.length; i++) {
+            try {
+                int num = Integer.parseInt(array[i]);
+                sum += num;
+            } catch (NumberFormatException e) {
+                // Ignore non-numeric strings
+            }
+        }
+
+        System.out.println("The sum of numbers is: " + sum);
 	}
 
 }
