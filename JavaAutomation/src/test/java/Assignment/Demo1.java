@@ -1,28 +1,28 @@
 package Assignment;
 
+import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Demo1 {
 
 	@Test
-	public void step1() {
-		ChromeOptions op = new ChromeOptions();
-		op.addArguments("headless");
-		ChromeDriver driver = new ChromeDriver(op);
-		driver.navigate().to("https://www.google.com");
-		System.out.println("Title is: "+driver.getTitle());
+	public void step() {
+		System.out.println("Method 3");
 	}
 
 	@Test
-	public void step2() {
-		WebDriverManager.chromedriver().setup();
+	public void step1() {
 		ChromeDriver driver = new ChromeDriver();
 		driver.navigate().to("https://www.google.com");
 		WebElement searchbox = driver.findElement(By.name("q"));
@@ -32,4 +32,12 @@ public class Demo1 {
 
 	}
 
+	@Test
+	public void step2() {
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("https://www.google.com");
+		String title=driver.getTitle();
+		Assert.assertEquals(title, "Googlee");
+	}
+	
 }

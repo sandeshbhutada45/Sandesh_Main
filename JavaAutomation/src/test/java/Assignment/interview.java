@@ -1,18 +1,23 @@
 package Assignment;
 
-import java.util.Arrays;
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class interview {
 
-	public static void main(String[] args) {
-		int a[]= {4,2,7,0,10,3};
-		int target=7;
-		for(int i=0;i<a.length;i++) {
-			if(a[i]==target) {
-				System.out.println(target+" is at Index: "+i);
-			}
-		}
-		
+	@Test
+	public void test() {
+		 WebDriver driver = new ChromeDriver();
+		 driver.get("https://www.basspro.com");
+		 driver.manage().window().maximize();
+		 String title=driver.getTitle();
+		 System.out.println(title);
+		 driver.findElement(By.xpath("(//*[contains(text(),'Off Road Sales')])[1]")).click();
+		 
 
 	}
 }
