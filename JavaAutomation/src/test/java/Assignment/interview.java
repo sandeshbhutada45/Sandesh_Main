@@ -1,23 +1,16 @@
 package Assignment;
 
-import static org.testng.Assert.assertEquals;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
+import java.util.HashMap;
 
 public class interview {
 
-	@Test
-	public void test() {
-		 WebDriver driver = new ChromeDriver();
-		 driver.get("https://www.basspro.com");
-		 driver.manage().window().maximize();
-		 String title=driver.getTitle();
-		 System.out.println(title);
-		 driver.findElement(By.xpath("(//*[contains(text(),'Off Road Sales')])[1]")).click();
-		 
+	public static void main(String args[]) {
 
+		String str = "Sandesh Bhutada";
+		String rev="";
+		for (int i = str.length()-1; i >= 0; i--) {
+			rev=rev+str.charAt(i);
+		}
+		System.out.println(rev);
 	}
 }
