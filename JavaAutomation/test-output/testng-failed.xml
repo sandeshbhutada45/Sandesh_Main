@@ -5,7 +5,6 @@
     <classes>
       <class name="TestNG.Assertions">
         <methods>
-          <include name="test1"/>
           <include name="test2"/>
         </methods>
       </class> <!-- TestNG.Assertions -->

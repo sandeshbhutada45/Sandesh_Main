@@ -6,21 +6,22 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class default_sb {
 
 	public static void main(String[] args) throws IOException {
-		XSSFWorkbook workbook;
-		FileInputStream file = new FileInputStream("C:\\Sanket\\SSAUTOMATION\\Java\\TestData\\Excel.xlsx");
-		workbook= new XSSFWorkbook(file);
-		XSSFSheet sheet= workbook.getSheetAt(0);
-		int rowCount= sheet.getLastRowNum();
-		System.out.println("Rows count: " + rowCount);
-		Row row = sheet.getRow(0);
-		Cell cell = row.getCell(0);
-        System.out.println(cell);
-		System.out.println(sheet.getRow(0).getCell(0));
-		
+		WebDriver driver;
+		ChromeOptions op= new ChromeOptions();
+		op.addArguments("headless");
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(op);
+		driver.get("https://www.google.com");
+		System.out.println(driver.getTitle());
 //		for (int i = 1; i <= rowCount; i++) {
 //            String user = sheet.getRow(i).getCell(0).getStringCellValue();
 //            String pass= sheet.getRow(i).getCell(1).getStringCellValue();

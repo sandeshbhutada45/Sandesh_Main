@@ -1,16 +1,21 @@
 package Assignment;
 
-import java.util.HashMap;
-
 public class interview {
 
 	public static void main(String args[]) {
 
-		String str = "Sandesh Bhutada";
-		String rev="";
-		for (int i = str.length()-1; i >= 0; i--) {
-			rev=rev+str.charAt(i);
+		String str = "mbsjJVsahgdcBkjHBKgHJDL";
+		String lowercase = "";
+		String uppercase = "";
+		for (char c : str.toCharArray()) {
+			if (Character.isLowerCase(c)) {
+				lowercase = lowercase + c;
+			} else {
+				uppercase = uppercase + c;
+			}
 		}
-		System.out.println(rev);
+		System.out.println("Lowercase: " + lowercase);
+		System.out.println("UpperCase: " + uppercase);
+
 	}
 }

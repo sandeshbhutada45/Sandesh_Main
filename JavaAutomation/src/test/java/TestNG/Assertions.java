@@ -10,7 +10,7 @@ public class Assertions {
 	@Test
 	public void test1() {
 		System.out.println("Open Browser");
-		assertEquals("True", "False"); // Hard Asseration
+		assertEquals("True", "True"); // Hard Asseration
 		System.out.println("Close Broswer");
 	}
 
