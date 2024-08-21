@@ -10,7 +10,7 @@ public class TestNGRunner {
 	public static void main(String[] args) {
 		TestNG test= new TestNG();
 		List<String> list= new ArrayList<String>();
-		list.add("C:\\Users\\sandesh.bhutada\\Eclipse_Workspace\\JavaAutomation\test-output\\DemoSuite\\testng-failed.xml");
+		list.add("C:\\Users\\sandesh.bhutada\\Eclipse_Workspace\\JavaAutomation\\test-output\\Demo1\\testng-failed.xml");
 		test.setTestSuites(list);
 		test.run();
 
