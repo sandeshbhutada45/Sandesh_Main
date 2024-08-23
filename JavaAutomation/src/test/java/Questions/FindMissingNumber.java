@@ -10,8 +10,8 @@ public class FindMissingNumber {
 		
 		int n=size*(size+1)/2;
 		System.out.println(n);
-		for(int s:num) {
-			sum=sum+s;
+		for(int i=0;i<size;i++) {
+			sum=sum+num[i];
 		}
 		System.out.println(sum);
 		
