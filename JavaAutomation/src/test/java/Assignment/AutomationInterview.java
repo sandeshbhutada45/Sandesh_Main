@@ -19,7 +19,14 @@ public class AutomationInterview {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[starts-with(@class, 'common')]"))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("fromCity"))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[starts-with(@placeholder,'From')]"))).sendKeys("Nagpur");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@data-suggestion-index=\"0\"]"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Nagpur']"))).click();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("toCity"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[starts-with(@placeholder,'To')]"))).sendKeys("Hyderabad");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Hyderabad']"))).click();
+		
+		driver.findElement(By.linkText("26")).click();
+		System.out.println(driver.getTitle());
 
 
 	}
