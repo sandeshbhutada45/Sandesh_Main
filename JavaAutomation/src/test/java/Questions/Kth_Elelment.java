@@ -21,7 +21,6 @@ public class Kth_Elelment {
 			}
 		}
 		System.out.println(Arrays.toString(nums));
-		int KthLargest= nums[k-1];
-		System.out.println(KthLargest);
+		System.out.println(nums[k-1]);
 	}
 }
