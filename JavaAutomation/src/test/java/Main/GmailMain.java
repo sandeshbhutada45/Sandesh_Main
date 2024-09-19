@@ -3,6 +3,7 @@ package Main;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -15,9 +16,9 @@ public class GmailMain {
 
 	@BeforeTest
 	public void steup() {
-		ChromeOptions op= new ChromeOptions();
-		op.addArguments("--incognito");
-		driver = new ChromeDriver(op);
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://accounts.google.com/");
 		gp= new GmailPage(driver);
