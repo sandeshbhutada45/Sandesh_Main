@@ -35,6 +35,6 @@ public class LoginPage extends Utils {
 
 	
 	public void step3() throws IOException {
-		UT.takeScreenshot();
+		UT.getScreenshot();
 	}
 }

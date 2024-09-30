@@ -47,7 +47,7 @@ public class PrismMain extends Utils{
 		actionPerfom2();
 		actionPerfom3();
 		getResponseCode();
-		takeScreenshot();
+		getScreenshot();
 		getPageURL();
 		writeExcel("URLS","","");
 		

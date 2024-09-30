@@ -396,7 +396,7 @@ public class Utils {
 	}
 
 ///////////TAKE SCREENSHOTS///////////////
-	public void takeScreenshot() throws IOException {
+	public void getScreenshot() throws IOException {
 
 		try {
 			TakesScreenshot ss = ((TakesScreenshot) driver);

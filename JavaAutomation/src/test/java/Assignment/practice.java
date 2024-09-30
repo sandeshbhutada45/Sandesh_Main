@@ -18,7 +18,7 @@ public class practice extends LoginPage {
 	}
 
 	public void screen() throws IOException {
-		lp.takeScreenshot();
+		lp.getScreenshot();
 		lp.step2();
 		lp.getPageURL();
 //		lp.writeExcel("URL","Title","");

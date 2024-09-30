@@ -14,7 +14,7 @@ public class ActmeraPage extends Utils {
 	}
 
 	public void step2() throws IOException {
-		takeScreenshot();
+		getScreenshot();
 	
 	}
 //

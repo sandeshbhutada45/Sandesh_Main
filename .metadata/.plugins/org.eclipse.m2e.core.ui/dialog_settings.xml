@@ -57,6 +57,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="MobileAutomation"/>
 			<item value="Demo"/>
 			<item value="cdgdgf"/>
 			<item value="RestAssured"/>
@@ -66,6 +67,7 @@
 			<item value="Auto"/>
 		</list>
 		<list key="artifactId">
+			<item value="Appium"/>
 			<item value="Demo"/>
 			<item value="fbdb"/>
 			<item value="RestAssured"/>
