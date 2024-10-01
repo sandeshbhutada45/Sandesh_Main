@@ -9,21 +9,22 @@ import io.appium.java_client.android.AndroidDriver;
 public class baseEmulator {
 	AndroidDriver driver;
 
-	public AndroidDriver baseMethod(String appPackage, String appActivity) throws Exception {
+	public AndroidDriver baseMethod(String deviceName, String UDID, String platformName, String platformVersion,
+			String automationName, String appPackage, String appActivity) throws Exception {
 
 		DesiredCapabilities cp = new DesiredCapabilities();
 
-		cp.setCapability("deviceName", "Pixel1");
+		cp.setCapability("deviceName", deviceName);
 
-		cp.setCapability("udid", "emulator-5554");
+		cp.setCapability("udid", UDID);
 
-		cp.setCapability("platformName", "Android");
+		cp.setCapability("platformName", platformName);
 
-		cp.setCapability("platformVersion", "11");
+		cp.setCapability("platformVersion", platformVersion);
 
-		cp.setCapability("automationName", "UiAutomator2");
+		cp.setCapability("automationName", automationName);
 
-		cp.setCapability("appPackage",appPackage);
+		cp.setCapability("appPackage", appPackage);
 
 		cp.setCapability("appActivity", appActivity);
 
