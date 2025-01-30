@@ -16,7 +16,7 @@ public class ShiftZeroToLast {
 			list.add(0);
 		}
 		System.out.println(list);
-
+		
 	}
 
 }

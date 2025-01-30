@@ -1,0 +1,15 @@
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\bin\Debug\net8.0\NewDotnetProject.exe
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\bin\Debug\net8.0\NewDotnetProject.deps.json
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\bin\Debug\net8.0\NewDotnetProject.runtimeconfig.json
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\bin\Debug\net8.0\NewDotnetProject.dll
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\bin\Debug\net8.0\NewDotnetProject.pdb
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.AssemblyInfoInputs.cache
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.AssemblyInfo.cs
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.csproj.CoreCompileInputs.cache
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.sourcelink.json
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.dll
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\refint\NewDotnetProject.dll
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.pdb
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\NewDotnetProject.genruntimeconfig.cache
+C:\Users\sandesh.bhutada\Eclipse_Workspace\NewDotnetProject\obj\Debug\net8.0\ref\NewDotnetProject.dll

@@ -3,6 +3,7 @@ package Pages;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 
@@ -14,6 +15,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -51,6 +54,7 @@ public class Assign8 {
 		} else {
 			System.out.println("URL NOT FOUND");
 		}
+		
 
 		// below is for header, navigation and it's title
 //		List<WebElement> links = driver.findElements(By.xpath("//*[@id=\"header-nav\"]//a"));

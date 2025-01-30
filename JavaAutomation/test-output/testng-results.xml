@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-24T19:41:23 IST" name="Default suite" finished-at="2024-09-24T19:41:31 IST" duration-ms="8580">
+  <suite started-at="2024-12-24T12:23:08 IST" name="Default suite" finished-at="2024-12-24T12:23:22 IST" duration-ms="14072">
     <groups>
     </groups>
-    <test started-at="2024-09-24T19:41:23 IST" name="Default test" finished-at="2024-09-24T19:41:31 IST" duration-ms="8580">
-      <class name="Pages.ZoomInZoomOut">
-        <test-method signature="f()[pri:0, instance:Pages.ZoomInZoomOut@14f5da2c]" started-at="2024-09-24T19:41:23 IST" name="f" finished-at="2024-09-24T19:41:31 IST" duration-ms="8535" status="PASS">
+    <test started-at="2024-12-24T12:23:08 IST" name="Default test" finished-at="2024-12-24T12:23:22 IST" duration-ms="14072">
+      <class name="Assignment.interview">
+        <test-method signature="test()[pri:0, instance:Assignment.interview@1c9b0314]" started-at="2024-12-24T12:23:08 IST" name="test" finished-at="2024-12-24T12:23:22 IST" duration-ms="14052" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- Pages.ZoomInZoomOut -->
+        </test-method> <!-- test -->
+      </class> <!-- Assignment.interview -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
