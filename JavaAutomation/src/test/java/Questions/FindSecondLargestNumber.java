@@ -16,7 +16,7 @@ public class FindSecondLargestNumber {
 				}
 			}
 		}
-//		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(a));
 		System.out.println("Second Largest Number is: " + a[1]);
 
 	}

@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Main.GmailMain">
+      <class name="Main.ActemraMain">
         <methods>
-          <include name="test2"/>
-          <include name="steup"/>
+          <include name="process1"/>
         </methods>
-      </class> <!-- Main.GmailMain -->
+      </class> <!-- Main.ActemraMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
